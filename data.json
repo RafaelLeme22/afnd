@@ -1,0 +1,51 @@
+    {
+        "states": [
+            {
+                "name": "q1",
+                "connections": [
+                    {
+                        "to":"q1",
+                        "conector": [1, 0]
+                    },
+                    {
+                        "to":"q2",
+                        "conector": [1]
+                    }
+                ]
+            },
+            {
+                "name": "q2",
+                "connections": [
+                    {
+                        "to":"q3",
+                        "conector": [0, "e"]
+                    }
+                ]
+            },
+            {
+                "name": "q3",
+                "connections": [
+                    {
+                        "to":"q4",
+                        "conector": [1]
+                    }
+                ]
+            },
+            {
+                "name": "q4",
+                "connections": [
+                    {
+                        "to":"q4",
+                        "conector": [0, 1]
+                    }
+                ]
+            }
+        ],
+        "alpha": [0,1,"e"],
+        "startState": "q1",
+        "endStates": ["q4"],
+        "entries":[
+            [0,1,0,1,1,0],
+            [0,0,1]
+        ]
+    }
